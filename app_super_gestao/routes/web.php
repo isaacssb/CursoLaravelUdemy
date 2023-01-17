@@ -19,6 +19,6 @@ Route::get('/sobre-nos', 'SobreNosController@sobreNos');
 
 Route::get('/contato', 'ContatoController@contato');
 
-Route::get('/contato/{id}', function(int $id) {
-    echo 'parametro enviado por get ' . $id;
-})->where('id', '[0-9]');
+// Route::get('/contato/{id}', function(int $id) {
+//     echo 'parametro enviado por get ' . $id;
+// })->where('id', '[0-9]');
