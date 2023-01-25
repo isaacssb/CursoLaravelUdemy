@@ -25,10 +25,6 @@ Route::get('/login', function () {
     return 'login';
 })->name('site.login');
 
-// Route::get('/contato/{id}', function(int $id) {
-//     echo 'parametro enviado por get ' . $id;
-// })->where('id', '[0-9]');
-
 Route::prefix('/app')->group(function () {
     Route::get('/clientes', function () {
         return 'clientes';
